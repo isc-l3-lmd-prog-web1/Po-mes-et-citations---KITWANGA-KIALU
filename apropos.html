@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<style>
+body { margin:0; font-family:'Roboto', sans-serif; background: linear-gradient(to bottom, #e6e6fa, #f0fff0); color:#333; }
+header, nav, footer { text-align:center; }
+header h1 { font-family:'Great Vibes', cursive; font-size:3em; color:#4b0082; padding:50px 0; }
+nav a { margin:0 10px; text-decoration:none; color:white; font-weight:bold; padding:15px 20px; background-color: rgba(138,43,226,0.6); border-radius:5px; }
+nav a:hover { background-color: rgba(221,160,221,0.8); }
+main { max-width:500px; margin:20px auto; padding:20px; }
+form { display:flex; flex-direction:column; gap:15px; }
+input, textarea { padding:10px; border-radius:5px; border:1px solid #ccc; font-size:1em; }
+button { padding:10px; background-color:#4b0082; color:white; border:none; border-radius:5px; font-weight:bold; cursor:pointer; transition:0.3s; }
+button:hover { background-color:#6a0dad; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Contact</h1>
+</header>
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="poemes.html">Poèmes</a>
+  <a href="histoires.html">Histoires</a>
+  <a href="apropos.html">À propos</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<main>
+  <form id="contactForm">
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
+    <textarea placeholder="Votre message" rows="5" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</main>
+<footer>
+  &copy; 2026 Poèmes & Histoires
+</footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Merci ! Votre message a été envoyé.');
+    this.reset();
+});
+</script>
+</body>
+</html>
