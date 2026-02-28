@@ -3,23 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
+<title>À propos</title>
 <style>
-body { margin:0; font-family:'Roboto', sans-serif; background: linear-gradient(to bottom, #e6e6fa, #f0fff0); color:#333; }
+body { margin:0; font-family:'Roboto', sans-serif; background: #fffaf0; color:#333; }
 header, nav, footer { text-align:center; }
-header h1 { font-family:'Great Vibes', cursive; font-size:3em; color:#4b0082; padding:50px 0; }
-nav a { margin:0 10px; text-decoration:none; color:white; font-weight:bold; padding:15px 20px; background-color: rgba(138,43,226,0.6); border-radius:5px; }
-nav a:hover { background-color: rgba(221,160,221,0.8); }
-main { max-width:500px; margin:20px auto; padding:20px; }
-form { display:flex; flex-direction:column; gap:15px; }
-input, textarea { padding:10px; border-radius:5px; border:1px solid #ccc; font-size:1em; }
-button { padding:10px; background-color:#4b0082; color:white; border:none; border-radius:5px; font-weight:bold; cursor:pointer; transition:0.3s; }
-button:hover { background-color:#6a0dad; }
+header h1 { font-family:'Great Vibes', cursive; font-size:3em; color:#8b4513; padding:50px 0; }
+nav a { margin:0 10px; text-decoration:none; color:white; font-weight:bold; padding:15px 20px; background-color: rgba(210,105,30,0.6); border-radius:5px; }
+nav a:hover { background-color: rgba(244,164,96,0.8); }
+main { max-width:900px; margin:20px auto; padding:20px; text-align:center; }
+main h2 { font-family:'Great Vibes', cursive; font-size:2.5em; color:#d2691e; }
+main p { font-size:1.2em; line-height:1.6; }
 </style>
 </head>
 <body>
 <header>
-  <h1>Contact</h1>
+  <h1>À propos</h1>
 </header>
 <nav>
   <a href="index.html">Accueil</a>
@@ -29,22 +27,11 @@ button:hover { background-color:#6a0dad; }
   <a href="contact.html">Contact</a>
 </nav>
 <main>
-  <form id="contactForm">
-    <input type="text" placeholder="Votre nom" required>
-    <input type="email" placeholder="Votre email" required>
-    <textarea placeholder="Votre message" rows="5" required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
+  <h2>Notre Mission</h2>
+  <p>Partager des poèmes et histoires inspirants pour éveiller l’imagination et toucher le cœur de nos lecteurs. Ce site est un espace de créativité et de partage pour tous les amoureux des mots.</p>
 </main>
 <footer>
   &copy; 2026 Poèmes & Histoires
 </footer>
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    alert('Merci ! Votre message a été envoyé.');
-    this.reset();
-});
-</script>
 </body>
 </html>
